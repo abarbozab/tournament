@@ -39,22 +39,39 @@ To Run the virtual machine follow the next steps:
 * Once database schema is created, run the series of tests defined in this test suite, run the program from the command line `$ python tournament_test.py`.You should be able to see the following output once all your tests have passed:
   ```
   vagrant@vagrant-ubuntu-trusty-32:/vagrant/tournament$ python tournament_test.py
+
   1 . deleted all information from database
+
   2. countPlayers() returns 0 after initial deletePlayers() execution.
+
   3. countPlayers() returns 1 after one player is registered.
+
   4. countPlayers() returns 2 after two players are registered.
+
   5. countPlayers() returns zero after registered players are deleted.
+
   5. Player records successfully deleted.
+
   6. Newly registered players appear in the standings with no matches.
+
   7. After a match, players have updated standings.
+
   8. After match deletion, player standings are properly reset.
+
   9. Matches are properly deleted.
+
   ---------Test Even pairings---------
+
   10. After one match, players with one win are properly paired.
+
   ---------Test Odd pairings---------
+
   13. After two matches, prevent a rematch and create another match
+
   14. After two matches, there are two byes.
+
   Success!  All tests pass!
+  
   ```
 
 
